@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: windows-latest
+pool: 'PRUEBA'
 
 steps:
 - task: Maven@3
