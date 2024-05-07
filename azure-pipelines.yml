@@ -6,7 +6,8 @@
 trigger:
 - main
 
-pool: 'PRUEBA'
+pool:
+  name: Default
 
 steps:
 - task: Maven@3
