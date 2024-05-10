@@ -6,7 +6,10 @@
 trigger:
 - main
 
-pool: 'PRUEBA'
+pool: 
+  name: 'PRUEBA'
+  demands: maven # exist check for myCustomCapability
+
 steps:
 - task: Maven@3
   inputs:
@@ -17,4 +20,5 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+ 
+  
